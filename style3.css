@@ -267,6 +267,11 @@
 	font-family: palatino;
 	//font-family: 'Contrail One', cursive;
 	hyphens: auto;
+	-ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
 }
 
 .conclusion_sum {
@@ -316,6 +321,11 @@
 	margin-bottom: 110px;
 	position: relative;
 	hyphens: auto;
+	-ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
 }
 
 
@@ -350,6 +360,11 @@
 	letter-spacing: 1.5px;
 	position: relative;
 	hyphens: auto;
+	-ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
 }
 
 .hoofdstuk-con h5 {
@@ -364,6 +379,11 @@
 	letter-spacing: 1.5px;
 	position: relative;
 	hyphens: auto;
+	-ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
 }
 
 
