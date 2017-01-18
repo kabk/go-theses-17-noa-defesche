@@ -1,0 +1,506 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+    font-family: 'gothic';
+    src: url('fonts/gothic-no-13-bt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothic-demi';
+    src: url('fonts/itc-franklin-gothic-lt-com-demi-compressed.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen {
+.top {
+	width: 100%;
+	height: 250px;
+	//position: fixed;
+	//background: yellow;
+	z-index: 3;
+	cursor: url(images/pijl3.png), auto;
+}
+
+.foot {
+	display: none;
+}
+
+
+.title {
+	width: 65%;
+	margin-left: 17.5%;
+	display: inline-block;
+	float: left;
+	//background: red;
+	z-index: 15;
+}
+
+.title a{
+	color: black;
+	text-decoration: none;
+}
+
+.top h1 {
+	font-weight: normal;
+	font-family: gothic;
+	text-align: center;
+	color: black;
+	padding-top: 20px;
+	font-size: 50px;
+	line-height: 45px;
+	margin-top: 250px;
+	hyphens: auto;
+}
+
+.top h2 {
+	font-weight: normal;
+	font-family: gothic;
+	text-align: center;
+	color: grey;
+	font-size: 25px;
+	//margin-top: 5px;
+	//line-height: 24px;
+	margin-left: -10%;
+	width: 120%;
+	hyphens: auto;
+	text-transform: uppercase;
+}
+
+
+
+.index {
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: inline-block;
+	background: white;
+	text-align: center;
+	z-index: 3;
+}
+
+.index a {
+	font-weight: normal;
+	font-family: gothic;
+	font-size: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: grey;
+}
+
+.index :hover {
+	color: white;
+	background: blue;
+}
+
+
+.menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height:100%;
+	background: white;
+	overflow: scroll;
+	overflow-x: hidden;
+	top: 50px;
+	left: 0;
+}
+
+
+
+.menu ul{
+	width: 80%;
+	//background: red;
+	margin-top: 70px;
+	margin-left: 10%;
+	margin-right: 10%;
+	list-style: none;
+	font-family: gothic;
+	font-size: 35px;
+	margin-bottom: 150px;
+	line-height: 37px;
+	hyphens: auto;
+}
+
+.menu li {
+	margin-bottom: 45px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//padding-bottom: 3px;
+	text-transform: uppercase;
+}
+
+.menu a:hover{
+	background: blue;
+	color: white;
+}
+
+.menu h2{
+	font-family: gothic;
+	font-size: 35px;
+	font-weight: lighter;
+	color: grey;
+	margin-left: 0px;
+	text-align: left;
+	text-transform: uppercase;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//padding-bottom: 3px;
+	display: none;
+	hyphens: auto;
+}
+
+.menu h3 {
+	font-family: gothic;
+	font-size: 35px;
+	font-weight: lighter;
+	color: grey;
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-align: left;
+	//display: block;
+	//text-indent: 35px;
+	//margin-left: 15%;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//padding-bottom: 3px;
+	hyphens: auto;
+}
+
+
+
+.artikel_images img{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	opacity: 0.3;
+	-webkit-filter: grayscale(100%) blur(3px);
+	display: none;
+}
+
+.images_engel {
+	margin-top: 1200px;
+}
+
+.images_clay {
+	margin-top: 700px;
+}
+
+.content {
+	width: 100%;
+	//height: 900px;
+	margin-top: 150px;
+	float: left;
+	cursor: url(images/pijl1.png), auto;
+}
+
+.content img{
+	width: 100%;
+	float: left;
+	-webkit-filter: grayscale(100%);
+	margin-bottom: 25px;
+}
+
+.conclusion {
+	width: 100%;
+	float: left;
+	//height: 100%;
+	background: black;
+	//float: left;
+	cursor: url(images/pijl2.png), auto;
+	display: none;
+}
+
+.hoofdstuk-con {
+	width: 110%;
+	float: left;
+	background: black;
+	margin-left: -5%;
+	margin-bottom: 120px;
+}
+
+.hoofdstuk {
+	margin-bottom: 120px;
+}
+
+.hoofdstuk_span {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	margin-top: -150px;
+}
+
+.content_text {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 150px;
+	//background: yellow;
+}
+
+.conclusion_text {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+	//background: yellow;
+	//opacity: 0;
+	position: relative;
+}
+
+
+
+.content_text p{
+	color: black;
+	font-size: 20px;
+	font-family: palatino;
+	//font-family: 'Contrail One', cursive;
+	hyphens: auto;
+}
+
+.conclusion_sum {
+	width: 100%;
+	//margin-top: 80px;
+	position: relative;
+}
+
+.conclusion_zin {
+	margin-top: 80px;
+}
+
+
+.content_titles {
+	margin-bottom: 20px;
+}
+
+.content_text h1{
+	color: black;
+	font-size: 50px;
+	font-family: gothic;
+	font-weight: normal;
+	padding: 0px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	color: grey;
+	line-height: 45px;
+	hyphens: auto;
+
+}
+
+.content_text h2{
+	color: black;
+	font-size: 50px;
+	font-family: gothic;
+	font-weight: lighter;
+	text-transform: uppercase;
+	line-height: 50px;
+	hyphens: auto;
+}
+
+.conclusion_sum p{
+	color: white;
+	font-size: 20px;
+	font-family: palatino;
+	//background: yellow;
+	margin-bottom: 110px;
+	position: relative;
+	hyphens: auto;
+}
+
+
+.hoofdstuk-con h1{
+	color: white;
+	//font-size: 600px;
+	font-family: gothic;
+	font-weight: lighter;
+	padding: 0px;
+	//background: red;
+	line-height: 300px;
+	//margin-bottom: -40px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	hyphens: auto;
+	margin-left: 5%;
+}
+
+
+
+
+.hoofdstuk-con h6 {
+	color: white;
+	font-size: 50px;
+	font-weight: lighter;
+	font-family: gothic;
+	margin-top: -5px;
+	margin-bottom: 80px;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	position: relative;
+	hyphens: auto;
+}
+
+.hoofdstuk-con h5 {
+	color: white;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family: gothic;
+	margin-top: -5px;
+	margin-bottom: 40px;
+	//line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	position: relative;
+	hyphens: auto;
+}
+
+
+
+
+#clay {
+	margin-top: 600px;
+}
+
+
+.content  a{
+    color: blue;
+    text-decoration: none;
+    color: blue;
+    //vertical-align: sub;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    hyphens: auto;
+}
+
+.content sub {
+	vertical-align: sub;
+    font-size: xx-small;
+    color: blue;
+}
+
+
+
+.foot sub{
+	display: none;
+}
+
+.foot p{
+	display: none;
+}
+
+#fn-t1, #fn-t2{
+	display: none;
+}
+
+
+
+#con-engel {
+	//opacity: 0;
+}
+
+#con-clay {
+	//opacity: 0;
+}
+
+.cijfer-engel {
+	opacity: 1;
+	//background: red;
+}
+
+.cijfer-clay {
+	opacity: 1;
+	//background: red;
+}
+
+.ref-engel {
+	opacity: 1;
+	//background: red;
+}
+
+.ref-clay {
+	opacity: 1;
+	//background: red;
+}
+
+.zin-engel {
+	opacity: 1;
+	//background: red;
+}
+
+.zin-clay {
+	opacity: 1;
+	//background: red;
+}
+
+
+
+
+.foot-onder {
+	margin-top: 30px;
+}
+
+.foot-onder p{
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: blue;
+	hyphens: auto;
+}
+
+.foot-onder sub{
+	vertical-align: super;
+	font-size: 15px;
+	margin-right: 1%;
+}
+
+#inhoud-naam {
+	display: none;
+}
+
+.conclusion_titles_print {
+	display: none;
+}
+
+.conclusion_titles_print_sub {
+	display: none;
+}
+
+.bron {
+	display: none;
+}
+
+#hoofdstuk_algemeen h1 {
+	margin-top: 100px;
+	hyphens: auto;
+}
+
+#titel-naam {
+	display: none;
+}
+
+.image-print {
+	display: none;
+}
+
+.conclusion_text h1 {
+	font-size: 250px;
+}
+
+.bron-con {
+	display: none;
+}
+
+
+}

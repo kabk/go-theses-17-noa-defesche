@@ -1,0 +1,737 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	cursor: url(images/pijl1.png), auto;
+}
+
+@font-face {
+    font-family: 'gothic';
+    src: url('fonts/gothic-no-13-bt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gothic-demi';
+    src: url('fonts/itc-franklin-gothic-lt-com-demi-compressed.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen {
+
+.top {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: white;
+	z-index: 13;
+	//cursor: url(images/pijl3.png), auto;
+}
+
+.foot {
+	width: 30%;
+	height: 100px;
+	//background: yellow;
+	float: left;
+	display: inline-block;
+	color: black;
+	z-index: 3;
+	position: absolute;
+}
+
+.foot p{
+	font-size: 12px;
+	font-family: palatino;
+	margin-left: 11%;
+	margin-top: 13px;
+	color: black;
+	//background: red;
+
+}
+
+.title {
+	width: 70%;
+	margin-left:15%;
+	display: inline-block;
+	float: left;
+	//background: red;
+	z-index: -2;
+	//color: blue;
+}
+
+.title a{
+	color: black;
+	text-decoration: none;
+}
+
+.top h1 {
+	font-weight: normal;
+	font-family: gothic;
+	text-align: center;
+	//color: blue;
+	padding-top: 100px;
+	font-size: 200px;
+	line-height: 170px; 
+}
+
+
+
+.top h2 {
+	font-weight: normal;
+	font-family: gothic;
+	text-align: center;
+	//color: blue;
+	font-size: 50px;
+	margin-top: 20px;
+	//display: none;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+#noa{
+	color: grey;
+	margin-top: 0px;
+	//display: none;
+	//position: absolute;
+	//left: 5%;
+	//top: 25px;
+}
+
+.shrink {
+	height: 70px;
+	//background: yellow;
+	transition: .4s ease-in-out;
+}
+
+.shrink h2 {
+	display: none;
+}
+
+.shrink h1 {
+	padding-top: 5px;
+	transition: .4s ease-in-out;
+	font-size: 50px;
+	line-height: 60px;
+	//color: blue;
+}
+
+.shrink h3 {
+	display: none;
+}
+
+
+
+.index {
+	width: 15%;
+	display: inline-block;
+	//background: yellow;
+	float: left;
+	margin-top: 28px;
+	//margin-left: 10%;
+	position: absolute;
+}
+
+.index a {
+	font-weight: normal;
+	font-family: gothic;
+	color: black;
+	font-size: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 35%;
+	text-decoration: none;
+	//border-bottom: solid 2.5px;
+	color: grey;
+	text-transform: uppercase;
+}
+
+.index a:hover {
+	color: white;
+	background: blue;
+}
+
+.shrink_index {
+	margin-top: 5px;
+	//color: blue;
+	//display: none;
+	//background: red;
+	transition: .3s ease-in-out;
+}
+
+
+.menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height:100%;
+	//background: yellow;
+	overflow: scroll;
+	top: 130px;
+}
+
+#menu_sub1_li, #menu_sub2_li, #menu_sub3_li {
+	margin-bottom: -20px;
+}
+
+#menu_sub1_li{
+	margin-top: -20px;
+}
+.menu ul{
+	width: 75%;
+	//background: red;
+	margin-top: 20px;
+	margin-left: 2.5%;
+	list-style: none;
+	font-family: gothic;
+	font-size: 50px;
+	margin-bottom: 180px;
+	//-webkit-column-count:2;
+    //-moz-column-count:2;
+    //column-count: 2;
+    //-webkit-column-rule:solid 2px #ccc;
+    //-webkit-column-gap:90px;
+    //text-align: center;
+}
+
+.menu li {
+	margin-bottom: 35px;
+	//background: red;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+
+.menu a:hover{
+	background: blue;
+	color: white;
+	font-weight: normal;
+}
+
+.menu h2{
+	font-family: palatino;
+	font-size: 20px;
+	font-weight: lighter;
+	color: black;
+	margin-left: 0px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	display: none;
+}
+
+.menu h3 a{
+	font-family: gothic;
+	font-size: 35px;
+	color: grey;
+	text-transform: uppercase;
+	font-weight: normal;
+	//margin-top: 10px;
+	//line-height: 35px;
+	text-align: left;
+	//text-indent: 35px;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//padding-bottom: 3px;
+	display: inline-block;
+}
+
+.content {
+	width: 50%;
+	height: 900px;
+	background: white;
+	float: left;
+	//cursor: url(images/pijl1.png), auto;
+	//overflow-x: hidden;
+}
+
+.content img{
+	width: 100%;
+	float: left;
+	-webkit-filter: grayscale(100%);
+	margin-bottom: 25px;
+}
+
+.conclusion {
+	width: 50%;
+	position: fixed;
+	right: 0;
+	height: 100%;
+	background: black;
+	//float: left;
+	//cursor: url(images/pijl2.png), auto;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.hoofdstuk {
+	margin-bottom: 120px;
+}
+
+.hoofdstuk_span {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	margin-top: -150px;
+}
+
+.content_text {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 850px;
+	//background: yellow;
+}
+
+.conclusion_text_con {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 20px;
+	//background: yellow;
+	//opacity: 0;
+	position: absolute;
+	-moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+	-webkit-filter:  blur(1.5px);
+	//overflow: scroll;
+}
+
+.conclusion_titles_print {
+	display: none;
+}
+
+
+
+.content_text p{
+	color: black;
+	font-size: 20px;
+	line-height: 24px;
+	font-family: palatino;
+	hyphens: auto;
+}
+
+.conclusion_sum {
+	width: 100%;
+	margin-top: 80px;
+	//margin-left: %;
+	//margin-top: 1000px;
+	//background: yellow;
+	//display: none;
+	position: absolute;
+}
+
+.conclusion_zin {
+	margin-top: 80px;
+}
+
+.content_titles {
+	margin-bottom: 20px;
+}
+
+.content_text h1{
+	font-size: 50px;
+	font-family: gothic;
+	font-weight: normal;
+	padding: 0px;
+	text-transform: uppercase;
+	//margin-bottom: 15px;
+	color: grey;
+	line-height: 45px;
+	hyphens: auto;
+
+}
+
+.content_text h2{
+	color: black;
+	font-size: 50px;
+	font-family: gothic;
+	font-weight: lighter;
+	text-transform: uppercase;
+	line-height: 50px;
+	hyphens: auto;
+}
+
+.conclusion_sum p{
+	color: white;
+	font-size: 20px;
+	font-family: palatino;
+	//background: yellow;
+	margin-bottom: 110px;
+	position: absolute;
+}
+
+
+
+.conclusion h1{
+	color: white;
+	font-size: 600px;
+	font-family: gothic;
+	font-weight: lighter;
+	padding: 0px;
+	//background: red;
+	//line-height: 600px;
+	margin-bottom: -40px;
+	position: absolute;
+	text-align: center;
+	width: 100%
+}
+
+.conclusion h2{
+	color: white;
+	font-size: 400px;
+	font-family: gothic;
+	font-weight: lighter;
+	padding: 0px;
+	//background: red;
+	//line-height: 600px;
+	//margin-bottom: -40px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top:80px;
+}
+
+
+.conclusion h6 {
+	color: white;
+	font-size: 50px;
+	font-weight: lighter;
+	font-family: gothic;
+	margin-top: -5px;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	position: absolute;
+}
+
+.conclusion h5 {
+	color: white;
+	font-size: 25px;
+	font-weight: lighter;
+	font-family: gothic;
+	margin-top: -5px;
+	//line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	position: absolute;
+}
+
+
+
+
+#clay {
+	margin-top: 600px;
+}
+
+
+.content  a{
+    text-decoration: none;
+    color: blue;
+    //vertical-align: u;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 0.5%;
+}
+
+.conclusion  a{
+    color: grey;
+    text-decoration: none;
+    //vertical-align: sub;
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.content sub {
+	vertical-align: text-bottom;
+    font-size: xx-small;
+    color: blue;
+}
+
+.conclusion sub {
+	vertical-align: sub;
+    font-size: xx-small;
+    color: blue;
+}
+
+.content a:hover {
+	background: blue;
+	color: white;
+}
+
+
+
+
+.foot sub{
+	vertical-align: super;
+    font-size: smaller;
+    color: blue;
+}
+
+.foot p{
+	color: blue;
+}
+
+#fn-t1, #fn-t2, #fn-t3, #fn-t4, #fn-t5, #fn-t6, #fn-t7, #fn-t8, #fn-t9, #fn-t10, 
+#fn-t11, #fn-t12, #fn-t13, #fn-t14, #fn-t15, #fn-t16, #fn-t17, #fn-t18, #fn-t19, #fn-t20, #fn-t21, #fn-t22, #fn-t23, #fn-t24, #fn-t25
+, #fn-t26, #fn-t27, #fn-t28, #fn-t29, #fn-t30, #fn-t31, #fn-t32, #fn-t33, #fn-t34, #fn-t35, #fn-t36, #fn-t37, #fn-t38, #fn-t39
+, #fn-t40, #fn-t41, #fn-t42, #fn-t43, #fn-t44, #fn-t45, #fn-t46, #fn-t47, #fn-t48, #fn-t49, #fn-t50{
+	display: none;
+}
+
+.cijfer-kopje0 {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-kopje1 {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-kopje2 {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-kopje3 {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-kopje4 {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-engel {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-clay {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-roos {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-sagmeister {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-daut {
+	opacity: 0;
+	//background: red;
+}
+
+.cijfer-mun {
+	opacity: 0;
+	//background: red;
+}
+
+
+
+.ref-engel {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-engel2 {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-clay {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-clay2 {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-roos {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-roos2 {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-roos3 {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-sagmeister {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-daut {
+	opacity: 0;
+	//background: red;
+}
+
+.ref-mun {
+	opacity: 0;
+	//background: red;
+}
+
+
+.zin-engel {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-engel2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-clay {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-clay2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-roos {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-roos2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-roos3 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-sagmeister {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-sagmeister2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-daut {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-daut2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-daut3 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-mun {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-mun2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-conclusie {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-conclusie2 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-conclusie3 {
+	opacity: 0;
+	//background: red;
+}
+
+.zin-conclusie4 {
+	opacity: 0;
+	//background: red;
+}
+
+
+
+
+	.add-con {
+		opacity: 1;
+		transition: .3s ease-in-out;
+	}
+
+
+.hoofdstuk-con {
+	display: none;
+}
+
+.foot-onder {
+	display: none;
+}
+
+#inhoud-naam {
+	display: none;
+}
+
+.nav {
+	display: none;
+}
+
+.bron {
+	display: none;
+}
+
+#titel-naam {
+	display: none;
+}
+
+#noa2{
+	display: none;
+}
+
+.image-print {
+	display: none;
+}
+
+.conclusion_titles_print_sub {
+	display: none;
+}
+
+
+}
+
